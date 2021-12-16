@@ -1,0 +1,18 @@
+﻿
+<h3> Все дома(пробная штука для вида) </h3>
+@{
+    foreach (var house in Model.allHouses)
+    {
+        <div>
+            <h3>@house.Name</h3>
+            <p>
+                Цена:@house.Price.ToString("c")
+                Адресс:@house.Address
+                Площадь:@house.Square
+            </p>
+            <img src="@house.Img" alt="@house.Name">
+        </div>
+
+    }
+}
+
